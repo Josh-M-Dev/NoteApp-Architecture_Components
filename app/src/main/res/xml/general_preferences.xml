@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <EditTextPreference
+        android:key="user_display_name"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/pref_title_display_name"
+        app:useSimpleSummaryProvider="true" />
+
+    <EditTextPreference
+        android:key="user_email_address"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/pref_title_email_address"
+        app:useSimpleSummaryProvider="true" />
+    <ListPreference
+        android:defaultValue="true"
+        android:entries="@array/pref_entries_favorite_social"
+        android:entryValues="@array/pref_values_favorite_social"
+        android:key="user_favorite_social"
+        android:title="@string/pref_title_favorite_social"
+        app:useSimpleSummaryProvider="true"/>
+
+</PreferenceScreen>
